@@ -1,0 +1,29 @@
+html {
+    background-color: blue;
+}
+
+.header {
+    background-color: red;
+}
+
+.footer{
+    background-color: #ebd8ba;
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.footer a{
+    font-family: Lexend, sans-serif;
+    color: #0b054b;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.footer a:hover{
+    color: #ff914d;
+}
