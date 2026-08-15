@@ -1,5 +1,5 @@
 .section1 {
-    background-color: white;
+    background: transparent;
     height: 100vh;
     width: 100%;
     padding: 10px;
@@ -14,15 +14,18 @@
     height: 80vh;
     width: 50%;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section1photo img {
-    height: 100%;
-    width: auto;
-}
-
-.section1photo {
-    border-color: black;
+    width: min(55vh, 40vw);
+    height: min(55vh, 40vw);
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(125, 216, 255, 0.55);
+    box-shadow: 0 0 25px rgba(77, 168, 255, 0.5), 0 0 70px rgba(77, 168, 255, 0.22);
 }
 
 .section1tabs {
@@ -36,6 +39,31 @@
     padding: 2rem 0;
 }
 
-.section1tabs button {
+.section1tabs .tabbutton {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(125, 216, 255, 0.25);
+    border-radius: 14px;
+    backdrop-filter: blur(6px);
+    text-decoration: none;
+    transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.section1tabs .tabbutton:hover {
+    background-color: rgba(125, 216, 255, 0.12);
+    border-color: rgba(125, 216, 255, 0.6);
+    box-shadow: 0 0 25px rgba(77, 168, 255, 0.35);
+    transform: translateY(-2px);
+}
+
+.section1tabs .tabbutton h3 {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #eaf2ff;
 }
