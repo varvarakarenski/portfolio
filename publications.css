@@ -1,0 +1,102 @@
+.pubs-page {
+    align-items: stretch;
+    text-align: left;
+    justify-content: flex-start;
+    min-height: auto;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+    gap: 0;
+}
+
+.pubs-page h2 {
+    text-align: center;
+}
+
+.pubs-page .pubsintro {
+    text-align: center;
+    margin: 0.5rem auto 2.75rem;
+}
+
+.pubs-page .back {
+    align-self: center;
+    margin-top: 3rem;
+}
+
+.pubsgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.pubcard {
+    background-color: #ffffff;
+    border: 1.5px solid rgba(30, 41, 59, 0.15);
+    border-radius: 10px;
+    padding: 1.75rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 3px 0 rgba(30, 41, 59, 0.08);
+}
+
+.pubthumb {
+    display: block;
+    margin-bottom: 1.25rem;
+}
+
+.pubthumb img {
+    width: 100%;
+    max-width: 190px;
+    border-radius: 4px;
+    border: 1.5px solid rgba(30, 41, 59, 0.2);
+    box-shadow: 3px 4px 0 rgba(30, 41, 59, 0.1), 0 8px 20px rgba(30, 41, 59, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pubthumb:hover img {
+    transform: translateY(-3px);
+    box-shadow: 4px 6px 0 rgba(30, 41, 59, 0.15), 0 10px 24px rgba(30, 41, 59, 0.16);
+}
+
+.pubcard h3 {
+    margin: 0 0 0.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.35;
+    color: #1f2937;
+}
+
+.pubcard .pubdate {
+    margin: 0;
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #8b8f9a;
+    max-width: none;
+}
+
+.pubcard .paperlink {
+    margin-top: 1rem;
+}
+
+.pubthumb-placeholder {
+    width: 100%;
+    max-width: 190px;
+    aspect-ratio: 0.77;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgba(30, 41, 59, 0.25);
+    border-radius: 4px;
+    color: rgba(30, 41, 59, 0.3);
+}
+
+.pubcard-empty h3 {
+    color: rgba(31, 41, 55, 0.45);
+    font-style: italic;
+}
