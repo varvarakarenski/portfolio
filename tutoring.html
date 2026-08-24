@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tutoring</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Lexend:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="tutoring.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="tutoring.html">TUTORING</a>
+            <a href="publications.html">PUBLICATIONS</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="skills.html">SKILLS</a>
+        </div>
+
+        <div class="tutorhero">
+            <span class="statusbadge"><span class="statusdot"></span>Open for new students</span>
+            <h1>Tutoring</h1>
+            <p class="tutortagline">Personalized STEM tutoring in math, physics, and engineering &mdash; from a current researcher and lifelong maker.</p>
+            <a class="tutorcta" href="#contact">Get in touch &darr;</a>
+        </div>
+
+        <div class="tutorsection" id="subjects">
+            <h2>Subjects</h2>
+            <p class="subjectsintro">Pick a subject to see the services and experience behind it.</p>
+
+            <div class="subjecttabs">
+                <button type="button" class="subjectbtn active" data-subject="math">Math &amp; Physics</button>
+                <button type="button" class="subjectbtn" data-subject="engineering">Engineering &amp; CAD</button>
+                <button type="button" class="subjectbtn" data-subject="research">Research Projects</button>
+                <button type="button" class="subjectbtn" data-subject="competition">STEM Competitions</button>
+            </div>
+
+            <div class="subjectpanel" data-subject-panel="math">
+                <h3>Math &amp; Physics Tutoring</h3>
+                <p class="subjectdesc">One-on-one help with algebra through calculus, and physics from intro mechanics through AP-level coursework.</p>
+                <ul class="subjectexp">
+                    <li>
+                        <span class="expyear">&mdash;</span>
+                        <div>
+                            <h4>STEM Tutor</h4>
+                            <p><em>Add details about your tutoring experience here &mdash; subjects, grade levels, and years of experience.</em></p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="expyear">2026</span>
+                        <div>
+                            <h4>Applied Physics in Research</h4>
+                            <p>Co-authored a published study on electrohydrodynamic propulsion, applying electric field and fluid dynamics fundamentals to a real engineering problem.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subjectpanel" data-subject-panel="engineering" hidden>
+                <h3>Engineering &amp; CAD Mentorship</h3>
+                <p class="subjectdesc">Guidance on design projects, CAD modeling, and hands-on fabrication for students building their first prototypes.</p>
+                <ul class="subjectexp">
+                    <li>
+                        <span class="expyear">&mdash;</span>
+                        <div>
+                            <h4>Maker &amp; Fabricator</h4>
+                            <p>Hands-on experience with woodworking, CAD, and building physical prototypes from scratch.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="expyear">2026</span>
+                        <div>
+                            <h4>Published Researcher</h4>
+                            <p>Designed and built a custom low-friction force measurement setup to test collector electrode geometries for an EHD propulsion study.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subjectpanel" data-subject-panel="research" hidden>
+                <h3>Research Project Support</h3>
+                <p class="subjectdesc">Help scoping, running, and writing up independent STEM research &mdash; from experiment design to publication.</p>
+                <ul class="subjectexp">
+                    <li>
+                        <span class="expyear">2026</span>
+                        <div>
+                            <h4>Published Researcher</h4>
+                            <p>Co-authored &ldquo;A Parametric Study on Annular Airfoil Geometry for Collector Electrodes in Electrohydrodynamic Propulsion Systems,&rdquo; published on engrXiv.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="expyear">&mdash;</span>
+                        <div>
+                            <h4>Research Mentorship</h4>
+                            <p><em>Add details about other research or mentorship experience here.</em></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subjectpanel" data-subject-panel="competition" hidden>
+                <h3>STEM Competition Prep</h3>
+                <p class="subjectdesc">Preparation for science fairs, olympiads, and application portfolios that showcase technical work.</p>
+                <ul class="subjectexp">
+                    <li>
+                        <span class="expyear">&mdash;</span>
+                        <div>
+                            <h4>Competition Experience</h4>
+                            <p><em>Add details about your competition experience here &mdash; science fairs, olympiads, hackathons, and results.</em></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tutorsection">
+            <h2>Recommendations</h2>
+            <div class="recsgrid">
+                <div class="reccard reccard-empty">
+                    <p class="recquote">&ldquo;Testimonial coming soon.&rdquo;</p>
+                    <p class="recname">&mdash; Add a name</p>
+                </div>
+                <div class="reccard reccard-empty">
+                    <p class="recquote">&ldquo;Testimonial coming soon.&rdquo;</p>
+                    <p class="recname">&mdash; Add a name</p>
+                </div>
+                <div class="reccard reccard-empty">
+                    <p class="recquote">&ldquo;Testimonial coming soon.&rdquo;</p>
+                    <p class="recname">&mdash; Add a name</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tutorsection tutorsection-alt" id="contact">
+            <h2>Get in Touch</h2>
+            <p class="contactintro">Interested in working together? Send a message below or email me directly.</p>
+            <form class="contactform" action="mailto:varvarakarenski@gmail.com" method="post" enctype="text/plain">
+                <label>Name
+                    <input type="text" name="name" required>
+                </label>
+                <label>Email
+                    <input type="email" name="email" required>
+                </label>
+                <label>Message
+                    <textarea name="message" rows="5" required></textarea>
+                </label>
+                <button type="submit">Send Message</button>
+            </form>
+            <a class="paperlink" href="mailto:varvarakarenski@gmail.com">Or email me directly &rarr;</a>
+        </div>
+
+        <div class="footer">
+            <a href="mailto:varvarakarenski@gmail.com">CONTACT</a>
+            <a href="index.html">OPPORTUNITIES</a>
+            <a href="index.html">EVENTS</a>
+            <a href="https://linkedin.com/in/varvara-karenski-8309a5322">LINKEDIN</a>
+        </div>
+
+        <script>
+            document.querySelectorAll('.subjectbtn').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var subject = btn.dataset.subject;
+
+                    document.querySelectorAll('.subjectbtn').forEach(function (b) {
+                        b.classList.toggle('active', b === btn);
+                    });
+
+                    document.querySelectorAll('.subjectpanel').forEach(function (panel) {
+                        var isMatch = panel.dataset.subjectPanel === subject;
+                        panel.hidden = !isMatch;
+                        if (isMatch) {
+                            panel.classList.remove('panel-pop');
+                            void panel.offsetWidth;
+                            panel.classList.add('panel-pop');
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

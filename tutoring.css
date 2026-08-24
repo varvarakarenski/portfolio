@@ -1,0 +1,276 @@
+.tutorhero {
+    text-align: center;
+    padding: 4.5rem 1.5rem 3rem;
+    border-bottom: 1.5px solid rgba(30, 41, 59, 0.12);
+}
+
+.tutorhero h1 {
+    margin: 0 0 1rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    color: #1f2937;
+}
+
+.tutortagline {
+    max-width: 36rem;
+    margin: 0 auto 1.75rem;
+    color: #5b5f6b;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.tutorcta {
+    display: inline-block;
+    padding: 0.85rem 2rem;
+    background-color: #1f2937;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Lexend', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.85rem;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tutorcta:hover {
+    background-color: #2c3e66;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(30, 41, 59, 0.2);
+}
+
+.tutorsection {
+    padding: 4rem 1.5rem;
+    border-bottom: 1.5px solid rgba(30, 41, 59, 0.12);
+}
+
+.tutorsection-alt {
+    background-color: rgba(30, 41, 59, 0.02);
+}
+
+.tutorsection h2 {
+    margin: 0 0 2.5rem;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    color: #1f2937;
+}
+
+.subjectsintro {
+    text-align: center;
+    max-width: 32rem;
+    margin: 0 auto 2.25rem;
+    color: #5b5f6b;
+}
+
+.subjecttabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.85rem;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+.subjectbtn {
+    padding: 0.65rem 1.4rem;
+    border: 1.5px solid rgba(30, 41, 59, 0.25);
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #1f2937;
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.subjectbtn:hover {
+    border-color: #2c3e66;
+    transform: translateY(-1px);
+}
+
+.subjectbtn.active {
+    background-color: #1f2937;
+    border-color: #1f2937;
+    color: #ffffff;
+}
+
+.subjectpanel {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subjectpanel h3 {
+    margin: 0 0 0.6rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #1f2937;
+}
+
+.subjectdesc {
+    max-width: 34rem;
+    margin: 0 auto 2.25rem;
+    color: #5b5f6b;
+    line-height: 1.6;
+}
+
+.subjectexp {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    text-align: left;
+}
+
+.subjectexp li {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    border-left: 3px solid rgba(30, 41, 59, 0.15);
+    padding-left: 1.25rem;
+}
+
+.expyear {
+    flex: 0 0 auto;
+    min-width: 3.5rem;
+    padding-top: 0.25rem;
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    color: #8b8f9a;
+}
+
+.subjectexp h4 {
+    margin: 0 0 0.3rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #1f2937;
+}
+
+.subjectexp p {
+    margin: 0;
+    color: #5b5f6b;
+    line-height: 1.55;
+}
+
+.subjectexp em {
+    color: #9aa0ab;
+}
+
+.recsgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.reccard {
+    background-color: #ffffff;
+    border: 1.5px dashed rgba(30, 41, 59, 0.2);
+    border-radius: 10px;
+    padding: 1.75rem;
+    text-align: center;
+}
+
+.recquote {
+    margin: 0 0 0.75rem;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: rgba(31, 41, 55, 0.5);
+}
+
+.recname {
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #8b8f9a;
+}
+
+.tutorsection#contact,
+#contact {
+    text-align: center;
+    border-bottom: none;
+}
+
+.contactintro {
+    max-width: 32rem;
+    margin: 0 auto 2rem;
+    color: #5b5f6b;
+}
+
+.contactform {
+    max-width: 460px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    text-align: left;
+}
+
+.contactform label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #5b5f6b;
+}
+
+.contactform input,
+.contactform textarea {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    padding: 0.65rem 0.75rem;
+    border: 1.5px solid rgba(30, 41, 59, 0.2);
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #1f2937;
+    resize: vertical;
+}
+
+.contactform input:focus,
+.contactform textarea:focus {
+    outline: none;
+    border-color: #2c3e66;
+    box-shadow: 0 0 0 3px rgba(44, 62, 102, 0.12);
+}
+
+.contactform button {
+    align-self: flex-start;
+    padding: 0.75rem 1.75rem;
+    background-color: #1f2937;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Lexend', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.contactform button:hover {
+    background-color: #2c3e66;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+    .subjectexp li {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+}
