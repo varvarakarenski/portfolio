@@ -1,0 +1,213 @@
+.projectshero {
+    text-align: center;
+    padding: 2.75rem 1.5rem 2rem;
+    border-bottom: 1.5px solid rgba(30, 41, 59, 0.12);
+}
+
+.projectshero h1 {
+    margin: 0 0 0.6rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: clamp(2.2rem, 5.5vw, 3.6rem);
+    color: #1f2937;
+}
+
+.projectstagline {
+    max-width: 36rem;
+    margin: 0 auto;
+    color: #5b5f6b;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.projectscarousel {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 2.5rem;
+}
+
+.carouselslide {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.carouselslide[hidden] {
+    display: none;
+}
+
+@keyframes slidePop {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.carouselslide.slide-pop {
+    animation: slidePop 0.35s ease;
+}
+
+.carouseltext {
+    flex: 1 1 45%;
+}
+
+.carouselslide[data-slide="1"] {
+    --accent: #2c3e66;
+}
+
+.carouselslide[data-slide="2"] {
+    --accent: #d1495b;
+}
+
+.carouselslide[data-slide="3"] {
+    --accent: #3f7d5c;
+}
+
+.carouselslide[data-slide="4"] {
+    --accent: #b8862c;
+}
+
+.slidecount {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent, #8b8f9a);
+}
+
+.carouseltext h3 {
+    margin: 0 0 0.75rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #1f2937;
+}
+
+.carouseltext p {
+    margin: 0;
+    color: #5b5f6b;
+    line-height: 1.6;
+}
+
+.carouselimage {
+    flex: 1 1 55%;
+    display: flex;
+    justify-content: center;
+}
+
+.imageplaceholder {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 4 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    border: 2px dashed rgba(30, 41, 59, 0.25);
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: rgba(30, 41, 59, 0.32);
+}
+
+.imageplaceholder svg {
+    width: 46px;
+    height: 46px;
+}
+
+.imageplaceholder span {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.carouselcontrols {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.carouselarrow {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid rgba(30, 41, 59, 0.25);
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #1f2937;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease, transform 0.15s ease, background-color 0.2s ease;
+}
+
+.carouselarrow:hover {
+    border-color: #2c3e66;
+    background-color: #f7f8fc;
+    transform: translateY(-1px);
+}
+
+.carouseldots {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: 1.5px solid rgba(30, 41, 59, 0.3);
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.dot:nth-child(1) {
+    --accent: #2c3e66;
+}
+
+.dot:nth-child(2) {
+    --accent: #d1495b;
+}
+
+.dot:nth-child(3) {
+    --accent: #3f7d5c;
+}
+
+.dot:nth-child(4) {
+    --accent: #b8862c;
+}
+
+.dot:hover {
+    border-color: var(--accent, #2c3e66);
+}
+
+.dot.active {
+    background-color: var(--accent, #1f2937);
+    border-color: var(--accent, #1f2937);
+    transform: scale(1.15);
+}
+
+.projectsback {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem 3rem;
+}
+
+@media (max-width: 720px) {
+    .carouselslide {
+        flex-direction: column;
+    }
+}

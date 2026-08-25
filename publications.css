@@ -30,9 +30,23 @@
     width: 100%;
 }
 
+.pubsgrid .pubcard:nth-child(1) {
+    --pubaccent: #2c3e66;
+}
+
+.pubsgrid .pubcard:nth-child(2) {
+    --pubaccent: #d1495b;
+}
+
+.pubsgrid .pubcard:nth-child(3) {
+    --pubaccent: #3f7d5c;
+}
+
 .pubcard {
     background-color: #ffffff;
     border: 1.5px solid rgba(30, 41, 59, 0.15);
+    border-top-width: 4px;
+    border-top-color: var(--pubaccent, rgba(30, 41, 59, 0.15));
     border-radius: 10px;
     padding: 1.75rem 1.5rem;
     display: flex;
@@ -40,6 +54,10 @@
     align-items: center;
     text-align: center;
     box-shadow: 2px 3px 0 rgba(30, 41, 59, 0.08);
+}
+
+.pubcard-empty {
+    border-top-color: rgba(30, 41, 59, 0.15) !important;
 }
 
 .pubthumb {

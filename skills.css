@@ -21,8 +21,28 @@
 }
 
 .skillscategory {
+    position: relative;
     padding: 3.5rem 1.5rem;
-    border-bottom: 1.5px solid rgba(30, 41, 59, 0.12);
+}
+
+.skillscategory::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10px;
+    background-image:
+        radial-gradient(circle 4px at 10px 5px, #2c3e66 99%, transparent 100%),
+        radial-gradient(circle 4px at 30px 5px, #d1495b 99%, transparent 100%),
+        radial-gradient(circle 4px at 50px 5px, #3f7d5c 99%, transparent 100%),
+        radial-gradient(circle 4px at 70px 5px, #b8862c 99%, transparent 100%);
+    background-size: 80px 10px;
+    background-repeat: repeat-x;
+}
+
+.skillscategory:has(+ .footer)::after {
+    display: none;
 }
 
 .skillscategory-alt {

@@ -7,27 +7,157 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Lexend:wght@300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="projects.css">
     </head>
     <body>
-        <div class="header">
-            <a class="home-link" href="index.html">
-                <h1>Varvara Karenski</h1>
-            </a>
+        <div class="navbar">
+            <span class="navbar-name">Varvara Karenski</span>
+            <div class="navbar-links">
+                <a href="index.html">HOME</a>
+                <a href="tutoring.html">TUTORING</a>
+                <a href="publications.html">PUBLICATIONS</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="skills.html">SKILLS</a>
+            </div>
+            <a class="navbar-brand" href="index.html">Portfolio</a>
         </div>
 
-        <div class="placeholder">
-            <h2>Projects</h2>
-            <p>This page is under construction. Check back soon.</p>
-            <a class="back" href="index.html">&larr; Back to home</a>
+        <div class="projectshero">
+            <h1>Projects</h1>
+            <p class="projectstagline">A look at what I&rsquo;ve been building &mdash; swap in real photos and write-ups as projects wrap up.</p>
+        </div>
+
+        <div class="projectscarousel">
+            <div class="carouselslides">
+                <div class="carouselslide" data-slide="1">
+                    <div class="carouseltext">
+                        <span class="slidecount">01 / 04</span>
+                        <h3>Project title</h3>
+                        <p>Description coming soon. Swap this placeholder copy with what the project is, the tools you used, and what came out of it.</p>
+                    </div>
+                    <div class="carouselimage">
+                        <div class="imageplaceholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                <circle cx="8.5" cy="10.5" r="1.5"/>
+                                <path d="M21 15l-5-5-4 4-3-3-4 4"/>
+                            </svg>
+                            <span>Photo coming soon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carouselslide" data-slide="2" hidden>
+                    <div class="carouseltext">
+                        <span class="slidecount">02 / 04</span>
+                        <h3>Project title</h3>
+                        <p>Description coming soon. Swap this placeholder copy with what the project is, the tools you used, and what came out of it.</p>
+                    </div>
+                    <div class="carouselimage">
+                        <div class="imageplaceholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                <circle cx="8.5" cy="10.5" r="1.5"/>
+                                <path d="M21 15l-5-5-4 4-3-3-4 4"/>
+                            </svg>
+                            <span>Photo coming soon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carouselslide" data-slide="3" hidden>
+                    <div class="carouseltext">
+                        <span class="slidecount">03 / 04</span>
+                        <h3>Project title</h3>
+                        <p>Description coming soon. Swap this placeholder copy with what the project is, the tools you used, and what came out of it.</p>
+                    </div>
+                    <div class="carouselimage">
+                        <div class="imageplaceholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                <circle cx="8.5" cy="10.5" r="1.5"/>
+                                <path d="M21 15l-5-5-4 4-3-3-4 4"/>
+                            </svg>
+                            <span>Photo coming soon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carouselslide" data-slide="4" hidden>
+                    <div class="carouseltext">
+                        <span class="slidecount">04 / 04</span>
+                        <h3>Project title</h3>
+                        <p>Description coming soon. Swap this placeholder copy with what the project is, the tools you used, and what came out of it.</p>
+                    </div>
+                    <div class="carouselimage">
+                        <div class="imageplaceholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                <circle cx="8.5" cy="10.5" r="1.5"/>
+                                <path d="M21 15l-5-5-4 4-3-3-4 4"/>
+                            </svg>
+                            <span>Photo coming soon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carouselcontrols">
+                <button type="button" class="carouselarrow" data-dir="-1" aria-label="Previous project">&larr;</button>
+                <div class="carouseldots">
+                    <button type="button" class="dot active" data-slide-target="1" aria-label="Go to project 1"></button>
+                    <button type="button" class="dot" data-slide-target="2" aria-label="Go to project 2"></button>
+                    <button type="button" class="dot" data-slide-target="3" aria-label="Go to project 3"></button>
+                    <button type="button" class="dot" data-slide-target="4" aria-label="Go to project 4"></button>
+                </div>
+                <button type="button" class="carouselarrow" data-dir="1" aria-label="Next project">&rarr;</button>
+            </div>
         </div>
 
         <div class="footer">
             <a href="mailto:bostonastroinfo@gmail.com">CONTACT US</a>
-            <a href="index.html">OPPORTUNITIES</a>
-            <a href="index.html">EVENTS</a>
+            <a href="https://github.com/varvarakarenski" target="_blank" rel="noopener">GITHUB</a>
             <a href="">LINKEDIN</a>
             <a href="https://www.instagram.com/bostonastronomy/">INSTAGRAM</a>
             <a href="https://www.tiktok.com/@bostonastronomy?lang=en">TIKTOK</a>
         </div>
+
+        <script>
+            (function () {
+                var slides = Array.prototype.slice.call(document.querySelectorAll('.carouselslide'));
+                var dots = Array.prototype.slice.call(document.querySelectorAll('.dot'));
+                var current = 1;
+
+                function showSlide(n) {
+                    current = n;
+                    slides.forEach(function (slide) {
+                        var isMatch = Number(slide.dataset.slide) === n;
+                        slide.hidden = !isMatch;
+                        if (isMatch) {
+                            slide.classList.remove('slide-pop');
+                            void slide.offsetWidth;
+                            slide.classList.add('slide-pop');
+                        }
+                    });
+                    dots.forEach(function (dot) {
+                        dot.classList.toggle('active', Number(dot.dataset.slideTarget) === n);
+                    });
+                }
+
+                document.querySelectorAll('.carouselarrow').forEach(function (btn) {
+                    btn.addEventListener('click', function () {
+                        var dir = Number(btn.dataset.dir);
+                        var next = ((current - 1 + dir + slides.length) % slides.length) + 1;
+                        showSlide(next);
+                    });
+                });
+
+                dots.forEach(function (dot) {
+                    dot.addEventListener('click', function () {
+                        showSlide(Number(dot.dataset.slideTarget));
+                    });
+                });
+            })();
+        </script>
     </body>
 </html>

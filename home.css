@@ -1,18 +1,20 @@
 .section1 {
     background: transparent;
-    height: 100vh;
     width: 100%;
-    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 2.5rem;
 }
 
 .section1photo {
-    height: 80vh;
-    width: 50%;
+    flex: 1 1 45%;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -20,28 +22,38 @@
 }
 
 .section1photo img {
-    width: min(50vh, 36vw);
-    height: min(50vh, 36vw);
+    width: min(38vh, 300px);
+    height: min(38vh, 300px);
     object-fit: cover;
     border-radius: 2px;
     border-style: solid;
     border-color: #ffffff;
-    border-width: 16px 16px 64px 16px;
+    border-width: 14px 14px 54px 14px;
     outline: 1px solid rgba(30, 41, 59, 0.15);
     box-shadow: 0 10px 24px rgba(30, 41, 59, 0.18), 0 2px 6px rgba(30, 41, 59, 0.1);
     transform: rotate(-2.5deg);
 }
 
 .section1tabs {
-    height: 80vh;
-    width: 50%;
+    flex: 1 1 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.75rem;
+    gap: 1.1rem;
     box-sizing: border-box;
-    padding: 2rem 0;
+}
+
+.section1tabs .tabbutton:nth-child(1) {
+    --tabaccent: #2c3e66;
+}
+
+.section1tabs .tabbutton:nth-child(2) {
+    --tabaccent: #d1495b;
+}
+
+.section1tabs .tabbutton:nth-child(3) {
+    --tabaccent: #3f7d5c;
 }
 
 .section1tabs .tabbutton {
@@ -50,9 +62,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 1.1rem;
     background-color: #ffffff;
     border: 1.5px solid rgba(30, 41, 59, 0.25);
+    border-left-width: 4px;
+    border-left-color: var(--tabaccent, rgba(30, 41, 59, 0.25));
     border-radius: 10px;
     box-shadow: 2px 3px 0 rgba(30, 41, 59, 0.08);
     text-decoration: none;
@@ -61,7 +75,7 @@
 
 .section1tabs .tabbutton:hover {
     background-color: #f7f8fc;
-    border-color: #2c3e66;
+    border-color: var(--tabaccent, #2c3e66);
     box-shadow: 3px 4px 0 rgba(44, 62, 102, 0.25);
     transform: translate(-1px, -2px);
 }
@@ -76,11 +90,27 @@
 }
 
 .featured {
+    position: relative;
     background-color: #ffffff;
     width: 100%;
     padding: 4rem 1.5rem;
     box-sizing: border-box;
-    border-top: 1.5px solid rgba(30, 41, 59, 0.12);
+}
+
+.featured::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 10px;
+    background-image:
+        radial-gradient(circle 4px at 10px 5px, #2c3e66 99%, transparent 100%),
+        radial-gradient(circle 4px at 30px 5px, #d1495b 99%, transparent 100%),
+        radial-gradient(circle 4px at 50px 5px, #3f7d5c 99%, transparent 100%),
+        radial-gradient(circle 4px at 70px 5px, #b8862c 99%, transparent 100%);
+    background-size: 80px 10px;
+    background-repeat: repeat-x;
 }
 
 .featured h2 {
@@ -92,10 +122,23 @@
     text-align: center;
 }
 
+.featured h2::after {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 8px;
+    margin: 0.9rem auto 0;
+    background-image:
+        radial-gradient(circle 3px at 8px 4px, #2c3e66 99%, transparent 100%),
+        radial-gradient(circle 3px at 32px 4px, #d1495b 99%, transparent 100%),
+        radial-gradient(circle 3px at 56px 4px, #3f7d5c 99%, transparent 100%);
+    background-repeat: no-repeat;
+}
+
 .featuredcontent {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: center;
     gap: 3rem;
     max-width: 1100px;
@@ -106,6 +149,7 @@
     flex: 1 1 30%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .featuredphoto img {
