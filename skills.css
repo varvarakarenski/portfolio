@@ -6,9 +6,10 @@
 
 .skillshero h1 {
     margin: 0 0 1rem;
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.4rem, 6vw, 3.8rem);
+    letter-spacing: 0.01em;
     color: #1f2937;
 }
 
@@ -49,10 +50,19 @@
     background-color: rgba(30, 41, 59, 0.02);
 }
 
+.skillscategory > h1 {
+    margin: 0 0 2rem;
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.6rem, 6.5vw, 4.2rem);
+    color: #1f2937;
+}
+
 .skillscategory h2 {
     margin: 0 0 2.25rem;
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lexend', sans-serif;
     font-weight: 800;
     font-size: clamp(1.8rem, 3.5vw, 2.3rem);
     color: #1f2937;
@@ -100,7 +110,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lexend', sans-serif;
     font-weight: 700;
     font-size: 0.85rem;
     color: #ffffff;
